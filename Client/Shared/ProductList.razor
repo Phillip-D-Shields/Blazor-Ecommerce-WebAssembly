@@ -1,0 +1,53 @@
+﻿<ul class="list-unstyled">
+    @foreach (var product in Products)
+    {
+        <li class="media my-3">
+            <div class="media-image-wrapper mr-2">
+                <a href="!#">
+                    <img class="media-image" src="@product.ImageUrl" alt="@product.Title" />
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="!#">
+                    <h4 class="mb-0">@product.Title</h4>
+                </a>
+                <p>
+                    @product.Description
+                </p>
+                <h5 class="price">
+                    $@product.Price
+                </h5>
+            </div>
+        </li>
+    }
+</ul>
+
+@code {
+    private static List<Product> Products = new List<Product>
+    {
+        new Product
+        {
+            Id = 1,
+            Title = "Product 1",
+            Description = "Description 1",
+            ImageUrl = "https://via.placeholder.com/150",
+            Price = 100.99m
+        },
+        new Product
+        {
+            Id = 1,
+            Title = "Product 2",
+            Description = "Description 2",
+            ImageUrl = "https://via.placeholder.com/150",
+            Price = 100.99m
+        },
+        new Product
+        {
+            Id = 1,
+            Title = "Product 3",
+            Description = "Description 3",
+            ImageUrl = "https://via.placeholder.com/150",
+            Price = 100.99m
+        },
+    };
+}
