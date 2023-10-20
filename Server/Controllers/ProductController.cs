@@ -21,4 +21,5 @@ namespace BlazorEcommerce.Server.Controllers
             var products = await _context.Products.ToListAsync();
             return Ok(products);
         }
-    }}
+    }
+}
