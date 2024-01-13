@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace BlazorEcommerce.Server.Services.ProductService
+﻿namespace BlazorEcommerce.Server.Services.ProductService
 {
     public class ProductService : IProductService
     {

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorEcommerce.Server.Controllers
 {
@@ -11,7 +10,7 @@ namespace BlazorEcommerce.Server.Controllers
 
         public ProductController(IProductService productService)
         {
-               _productService = productService;
+            _productService = productService;
         }
 
         [HttpGet]
