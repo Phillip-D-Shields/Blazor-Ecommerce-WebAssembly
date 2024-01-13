@@ -8,6 +8,6 @@
         public string ImageUrl { get; set; } = string.Empty;
         public Category? Category { get; set; }
         public int CategoryId { get; set; }
-        public List<ProductVariant> ProductVariants { get; set; } = new List<ProductVariant>();
+        public List<ProductVariant> Variants { get; set; } = new List<ProductVariant>();
     }
 }
